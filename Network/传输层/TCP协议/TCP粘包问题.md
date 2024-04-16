@@ -15,3 +15,13 @@ TCP 粘包原因如下：
   - 也就是每个包的开头加点信息，说明传输数据的大小
 
 比如使用 `System.IO.Pipeline` ，可以找规定结束符号的地方，将消息分割为多个包。
+
+## 粘包拆包处理
+
+![ReadOnlySequence](./image/Pipeline-and-Sequence.png)
+
+在 `C#` 中可以使用 `Pipeline` 和 `ReadOnlySequence` 来解决这个问题。
+
+`Pipeline` 有两个对象成员，一个是 `PipeWriter` ，一个是 `PipeReader` ，简单来说一个是生产者，一个是消费者。`PipeWriter` 负责向管道写入数据流，`PipeReader` 读取管道中的数据流。
+
+一般来说使用 `Pipeline` 来解决粘包问题，主要还是看协议规定的分割方式，比如规定包的大小，还是规定结尾字符。
