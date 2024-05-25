@@ -1,4 +1,8 @@
-# CSNotes
+# CS Notes
+
+> 我有很多我想要写的东西，但是我没多少时间
+> 我没办法将之前的笔记一一搬运过来，因为我也忘记它们在哪里了
+> 以后可能会重新对他们写一遍。
 
 这是一个关于我个人平常学习的笔记积累。
 
@@ -11,3 +15,7 @@
 ## 一些有用的文章
 
 - [WebAssembly 介绍](https://www.smashingmagazine.com/2017/05/abridged-cartoon-introduction-webassembly/)
+
+## 一些有用的网站
+
+[godbolt](https://godbolt.org/)
