@@ -14,6 +14,12 @@
 
 顺便这里重新整理一下一些可能会忘记的东西。
 
+## 编程的流程
+
+来自于《游戏编程模式》。
+
+![流程图](./Asset/Image/编程的流程图.png)
+
 ## 一些有用的文章
 
 - [WebAssembly 介绍](https://www.smashingmagazine.com/2017/05/abridged-cartoon-introduction-webassembly/)
