@@ -18,6 +18,8 @@
 
 ## 学习的方式
 
+> 一个很好的总结来自于这个视频：[How I learned Unity without following tutorials (Developing 1)](https://www.youtube.com/watch?v=vFjXKOXdgGo)
+
 1. 学习最基础的东西，不要多了没用的东西，不要想着一步就是一个大象
 2. 重复简单的项目来熟悉这些基础知识
 3. 慢慢的，通过这些基础知识构建出所有需要的东西
