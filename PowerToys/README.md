@@ -1,4 +1,4 @@
-# PowerTools
+# PowerToys
 
 这里记录一些比较有用的工具。
 
