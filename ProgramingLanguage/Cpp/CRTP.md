@@ -71,3 +71,25 @@ int main() {
 ## 更好的 CRTP：推导 this
 
 到了 `c++23` ，就不再直接需要使用 `CRTP` 了，而是使用推导 `this` 会更好。
+
+```c++
+struct Base {
+    void Dump(this auto &&self) {
+        self.DumpImpl();
+    }
+};
+
+struct D1 : public Base {
+private:
+    void DumpImpl() {
+        std::println("D1");
+    }
+};
+
+struct D2 : public Base {
+private:
+    void DumpImpl() {
+        std::println("D2");
+    }
+};
+```
