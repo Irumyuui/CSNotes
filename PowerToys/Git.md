@@ -20,3 +20,8 @@ git config --global i18n.logoutputencoding utf-8
 git config --global http.proxy http://127.0.0.1:7890 
 ```
 
+## windows 下文件名过长
+
+```powershell
+git config --system core.longpaths true
+```
