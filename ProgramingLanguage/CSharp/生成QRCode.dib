@@ -1,0 +1,30 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+# 生成 QR Code
+
+主要是使用 `QRCoder` 这个 NuGet 包来生成二维码。
+
+#!csharp
+
+#r "nuget: QRCoder"
+
+using QRCoder;
+
+byte[] GeneratorQRCode(string text, int pixelsPerModule = 1) {
+    using var generator = new QRCodeGenerator();
+    using var codeData = generator.CreateQrCode(text, QRCodeGenerator.ECCLevel.Default);
+    using var qrCode = new PngByteQRCode(codeData);
+    var qrCodeImgBytes = qrCode.GetGraphic(pixelsPerModule);
+    return qrCodeImgBytes;
+}
+
+#!csharp
+
+var data = "Hello World";
+var img = GeneratorQRCode(data, 8);
+
+await System.IO.File.WriteAllBytesAsync("qrcode.png", img);
