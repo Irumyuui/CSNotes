@@ -1,3 +1,9 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
 # 状态机模式
 
 > 这是我面试的时候面试官问我了鬼泣的指令，我重新思考了一下，这其实就是状态机模式。
@@ -131,3 +137,70 @@ player.State?.Handle(player, input);
 
 不过一般来说，这种状态机其实都是用单例模式的，也就是这些节点应该提供一个自己的单例模式。
 
+下面就是一个关于状态机设计模式的一个实例演示了。
+
+#!csharp
+
+#nullable enable
+
+public interface IContext<TSource>
+{
+    IState<TSource>? State { get; set; }
+    bool Request(TSource source);
+}
+
+public interface IState<TSource>
+{
+    bool Handle(IContext<TSource> context, TSource source);
+}
+
+public interface IContext
+{
+    IState? State { get; set; }
+    bool Request();
+}
+
+public interface IState
+{
+    bool Handle(IContext context);
+}
+
+public class ConcreteStateA : IState
+{
+    public bool Handle(IContext context)
+    {
+        Console.WriteLine("State A");
+        return true;
+    }
+}
+
+public class ConcreteStateB : IState
+{
+    public bool Handle(IContext context)
+    {
+        Console.WriteLine("State B");
+        return true;
+    }
+}
+
+public class Context : IContext
+{
+    public IState? _state;
+
+    public IState? State { get => _state; set => _state = value; }
+
+    public bool Request() => _state?.Handle(this) ?? false;
+}
+
+#!csharp
+
+var stateA = new ConcreteStateA();
+var stateB = new ConcreteStateB();
+
+var context = new Context();
+
+context.Request();  // context.State?.Handle(context);
+context.State = stateA;
+context.Request();
+context.State = stateB;
+context.Request();
