@@ -8,9 +8,7 @@ using static System.Math;
 
 void Main(Scanner cin, TextWriter cout)
 {
-
 }
-
 #if DEBUG
 
 /*
@@ -125,6 +123,36 @@ public class Scanner
     {
         var (t1, t2, t3) = Next<T1, T2, T3>(p1, p2, p3);
         return (t1, t2, t3, Next<T4>(p4));
+    }
+
+    public (T1, T2, T3, T4, T5) Next<T1, T2, T3, T4, T5>(IFormatProvider? p1 = null, IFormatProvider? p2 = null, IFormatProvider? p3 = null, IFormatProvider? p4 = null, IFormatProvider? p5 = null) where T1 : IParsable<T1> where T2 : IParsable<T2> where T3 : IParsable<T3> where T4 : IParsable<T4> where T5 : IParsable<T5>
+    {
+        var (t1, t2, t3, t4) = Next<T1, T2, T3, T4>(p1, p2, p3, p4);
+        return (t1, t2, t3, t4, Next<T5>(p5));
+    }
+
+    public (T1, T2, T3, T4, T5, T6) Next<T1, T2, T3, T4, T5, T6>(IFormatProvider? p1 = null, IFormatProvider? p2 = null, IFormatProvider? p3 = null, IFormatProvider? p4 = null, IFormatProvider? p5 = null, IFormatProvider? p6 = null) where T1 : IParsable<T1> where T2 : IParsable<T2> where T3 : IParsable<T3> where T4 : IParsable<T4> where T5 : IParsable<T5> where T6 : IParsable<T6>
+    {
+        var (t1, t2, t3, t4, t5) = Next<T1, T2, T3, T4, T5>(p1, p2, p3, p4, p5);
+        return (t1, t2, t3, t4, t5, Next<T6>(p6));
+    }
+
+    public (T1, T2, T3, T4, T5, T6, T7) Next<T1, T2, T3, T4, T5, T6, T7>(IFormatProvider? p1 = null, IFormatProvider? p2 = null, IFormatProvider? p3 = null, IFormatProvider? p4 = null, IFormatProvider? p5 = null, IFormatProvider? p6 = null, IFormatProvider? p7 = null) where T1 : IParsable<T1> where T2 : IParsable<T2> where T3 : IParsable<T3> where T4 : IParsable<T4> where T5 : IParsable<T5> where T6 : IParsable<T6> where T7 : IParsable<T7>
+    {
+        var (t1, t2, t3, t4, t5, t6) = Next<T1, T2, T3, T4, T5, T6>(p1, p2, p3, p4, p5, p6);
+        return (t1, t2, t3, t4, t5, t6, Next<T7>(p7));
+    }
+
+    public (T1, T2, T3, T4, T5, T6, T7, T8) Next<T1, T2, T3, T4, T5, T6, T7, T8>(IFormatProvider? p1 = null, IFormatProvider? p2 = null, IFormatProvider? p3 = null, IFormatProvider? p4 = null, IFormatProvider? p5 = null, IFormatProvider? p6 = null, IFormatProvider? p7 = null, IFormatProvider? p8 = null) where T1 : IParsable<T1> where T2 : IParsable<T2> where T3 : IParsable<T3> where T4 : IParsable<T4> where T5 : IParsable<T5> where T6 : IParsable<T6> where T7 : IParsable<T7> where T8 : IParsable<T8>
+    {
+        var (t1, t2, t3, t4, t5, t6, t7) = Next<T1, T2, T3, T4, T5, T6, T7>(p1, p2, p3, p4, p5, p6, p7);
+        return (t1, t2, t3, t4, t5, t6, t7, Next<T8>(p8));
+    }
+
+    public (T1, T2, T3, T4, T5, T6, T7, T8, T9) Next<T1, T2, T3, T4, T5, T6, T7, T8, T9>(IFormatProvider? p1 = null, IFormatProvider? p2 = null, IFormatProvider? p3 = null, IFormatProvider? p4 = null, IFormatProvider? p5 = null, IFormatProvider? p6 = null, IFormatProvider? p7 = null, IFormatProvider? p8 = null, IFormatProvider? p9 = null) where T1 : IParsable<T1> where T2 : IParsable<T2> where T3 : IParsable<T3> where T4 : IParsable<T4> where T5 : IParsable<T5> where T6 : IParsable<T6> where T7 : IParsable<T7> where T8 : IParsable<T8> where T9 : IParsable<T9>
+    {
+        var (t1, t2, t3, t4, t5, t6, t7, t8) = Next<T1, T2, T3, T4, T5, T6, T7, T8>(p1, p2, p3, p4, p5, p6, p7, p8);
+        return (t1, t2, t3, t4, t5, t6, t7, t8, Next<T9>(p9));
     }
 
     public T[] Next<T>(int length, IFormatProvider? p = null) where T : IParsable<T>
