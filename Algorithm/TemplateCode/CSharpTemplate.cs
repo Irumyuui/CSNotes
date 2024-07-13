@@ -98,6 +98,7 @@ public class Scanner
 
     public string NextWord()
     {
+        ReadNextLine();
         var text = _buffer.Last();
         _buffer.RemoveAt(^1);
         return text;
@@ -105,7 +106,6 @@ public class Scanner
 
     public T Next<T>(IFormatProvider? p = null) where T : IParsable<T>
     {
-        ReadNextLine();
         return T.Parse(NextWord(), p);
     }
 
