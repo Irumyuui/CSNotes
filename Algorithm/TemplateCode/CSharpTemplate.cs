@@ -1,3 +1,85 @@
+using System;
+
+#if DEBUG
+using Dumpify;
+#endif
+
+using static System.Math;
+
+void Main(Scanner cin, TextWriter cout)
+{
+
+}
+
+#if DEBUG
+
+/*
+"""
+
+""",
+"""
+
+""",
+"""
+
+""",
+"""
+
+""",
+*/
+
+var questions = new List<string>()
+{
+"""
+
+""",
+"""
+
+""",
+"""
+
+""",
+"""
+
+""",
+"""
+
+""",
+"""
+
+""",
+};
+
+foreach (var (id, question) in questions.WithIndex())
+{
+    using var reader = new StringReader(question);
+    using var writer = new StringWriter();
+
+    var scanner = new Scanner(reader);
+
+    Console.WriteLine($"Test {id + 1}: ");
+
+    try
+    {
+        Main(scanner, writer);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+        break;
+    }
+
+    var result = writer.ToString();
+    Console.WriteLine(result);
+    Console.Out.Flush();
+}
+
+#else
+Main(new Scanner(Console.In), Console.Out);
+#endif
+
+#region TemplateCode
+
 public class Scanner
 {
     private TextReader _reader;
@@ -58,6 +140,14 @@ public static class ListExtensions
 {
     public static void RemoveAt<T>(this List<T> self, Index index)
         => self.RemoveAt(index.GetOffset(self.Count));
+
+    public static IEnumerable<(int Index, T Value)> WithIndex<T>(this List<T> self)
+    {
+        for (int i = 0; i < self.Count; i++)
+        {
+            yield return (i, self[i]);
+        }
+    }
 }
 
 public static class ArrayExtensions
@@ -68,3 +158,14 @@ public static class ArrayExtensions
     public static void Sort<T>(this T[] self, Comparison<T> comparable)
         => Array.Sort(self, comparable);
 }
+
+#if DEBUG
+#else
+public static class DebugExtensions
+{
+    [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+    public static void Dump<T>(this T self) {}
+}
+#endif
+
+#endregion
