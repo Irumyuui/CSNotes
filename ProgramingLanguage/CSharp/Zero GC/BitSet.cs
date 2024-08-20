@@ -83,7 +83,6 @@ public struct BitSet256
         return result;
     }
 
-
     public static BitSet256 operator ~(BitSet256 value)
     {
         BitSet256 result = default;
