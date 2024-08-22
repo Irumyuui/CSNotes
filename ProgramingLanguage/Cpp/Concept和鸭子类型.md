@@ -97,7 +97,8 @@ fn main() {
 不过 c++ 可以稍微不那么优雅一点的实现就是了...
 
 ```c++
-export struct IDumpable {
+struct IDumpable {
+    virtual IDumpable() = default;
     virtual void Dump() = 0;
 };
 ```
