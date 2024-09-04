@@ -1,0 +1,5 @@
+float a, b;
+int c;
+/* a = 20;
+b = a + 10; */
+c = a * (b - b) / a;
