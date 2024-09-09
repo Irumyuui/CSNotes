@@ -1,0 +1,26 @@
+﻿@page "/test"
+@using BlazorAppTest.Entites.Dtos
+@* @using Microsoft.EntityFrameworkCore.Metadata.Internal *@
+@rendermode InteractiveWebAssembly
+
+@inject HttpClient HttpClient
+
+
+<h3>Component</h3>
+
+<button @onclick="GetPlayers">Get Players</button>
+
+<div>
+    <ul>
+
+    </ul>
+</div>
+
+@code {
+    private IEnumerable<PlayerDto> Models { get; set; } = [];
+
+    private async Task GetPlayers()
+    {
+        Models = await HttpClient.GetFromJsonAsync<PlayerDto[]>("api/player/all");
+    }
+}
