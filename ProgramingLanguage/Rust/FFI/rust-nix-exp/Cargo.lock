@@ -39,7 +39,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-nix-cont"
+name = "rust-nix-exp"
 version = "0.1.0"
 dependencies = [
  "nix",
