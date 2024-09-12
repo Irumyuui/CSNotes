@@ -52,16 +52,16 @@ private:
 };
 } // namespace karus
 
-karus::ThreadPool::ThreadPool(std::size_t thread_count) {
+inline karus::ThreadPool::ThreadPool(std::size_t thread_count) {
   this->threads_.reserve(thread_count);
   while (this->threads_.size() < thread_count) {
     this->threads_.emplace_back([this] { this->ThreadLoop(); });
   }
 }
 
-karus::ThreadPool::~ThreadPool() { this->Stop(false); }
+inline karus::ThreadPool::~ThreadPool() { this->Stop(false); }
 
-auto karus::ThreadPool::AddTask(const Task &task) -> void {
+inline auto karus::ThreadPool::AddTask(const Task &task) -> void {
   this->tasks_.Push(task);
   this->thread_cond_.notify_one();
 }
@@ -83,7 +83,7 @@ auto karus::ThreadPool::SubmitTask(Fn &&fn, Args &&...args)
   return func_ptr->get_future();
 }
 
-auto karus::ThreadPool::ThreadLoop() -> void {
+inline auto karus::ThreadPool::ThreadLoop() -> void {
   while (true) {
     Task task;
     {
@@ -105,7 +105,7 @@ auto karus::ThreadPool::ThreadLoop() -> void {
   }
 }
 
-auto karus::ThreadPool::Stop(bool exec_remain_tasks) -> void {
+inline auto karus::ThreadPool::Stop(bool exec_remain_tasks) -> void {
   std::unique_lock lock{this->wait_tasks_mutex_};
 
   if (exec_remain_tasks) {
@@ -123,7 +123,7 @@ auto karus::ThreadPool::Stop(bool exec_remain_tasks) -> void {
   this->is_terminal_ = false;
 }
 
-auto karus::ThreadPool::AddThread(std::size_t thread_count) -> void {
+inline auto karus::ThreadPool::AddThread(std::size_t thread_count) -> void {
   for (std::size_t i = 0; i < thread_count; i++) {
     this->threads_.emplace_back([this] { this->ThreadLoop(); });
   }
