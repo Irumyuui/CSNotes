@@ -74,22 +74,25 @@ int main() {
 
 ```c++
 struct Base {
-    void Dump(this auto &&self) {
-        self.DumpImpl();
+    template <typename T>
+        requires requires(T t) { t.Action(); }
+    void Dump(this const T &self) {
+        self.Action();
     }
 };
 
 struct D1 : public Base {
 private:
-    void DumpImpl() {
+    void Action() {
         std::println("D1");
     }
 };
 
 struct D2 : public Base {
 private:
-    void DumpImpl() {
+    void Action() {
         std::println("D2");
     }
 };
+
 ```
