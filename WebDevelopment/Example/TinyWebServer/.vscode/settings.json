@@ -1,0 +1,13 @@
+{
+    "clangd.arguments": [
+        "-j=16",
+        "--background-index",
+        "--compile-commands-dir=${workspaceFolder}/.vscode",
+        "--clang-tidy",
+        "--completion-style=detailed",
+        "--pch-storage=memory",
+        "--clang-tidy-checks=bugprone-*",
+        "--log=verbose",
+        "--pretty"
+    ]
+}
