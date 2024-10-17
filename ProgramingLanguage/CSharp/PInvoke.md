@@ -101,3 +101,30 @@ struct Foo {
 ```
 
 不过更加一般的是，最好是直接使用 `IntPtr` 进行管理，这样就不会涉及到生命周期的问题。
+
+## P/Invoke 实现机制
+
+在 `windows` 下的实现机制为：
+
+- `LoadLibrary` 加载 dll
+- `GetProcAddress` 通过 dll 中的动态链接表中的地址信息，获取指定函数地址
+
+在 `linux` 下的实现则是 ``dlopen`` 和 ``dlsym`` 。
+
+
+## 一些错误
+
+### 调用约定不一致
+
+调用约定不一致导致的栈破坏。
+
+### 委托异步时，对象生命周期结束
+
+调用 c++ dll 导出函数，委托给 c++ ，c++ 内部又开了一个新的线程时，如果触发 GC，对象生命周期结束，导致委托无法调用。
+
+还有其他的一些引用对象，此时就需要将其 Pin 住，防止 GC 回收。
+
+```csharp
+var handle = GCHandle.Alloc(obj, GCHandleType.Pinned);
+handle.Free();
+```
