@@ -125,6 +125,8 @@ dependencies = [
  "anyhow",
  "axum",
  "axum-client-ip",
+ "serde",
+ "serde_json",
  "timedmap",
  "tokio",
  "tracing",
