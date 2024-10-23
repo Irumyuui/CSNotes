@@ -1,0 +1,13 @@
+[package]
+name = "axum-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.91", features = ["backtrace"] }
+axum = "0.7.7"
+axum-client-ip = "0.6.1"
+timedmap = { version = "1.0.2", features = ["tokio"] }
+tokio = { version = "1.41.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
