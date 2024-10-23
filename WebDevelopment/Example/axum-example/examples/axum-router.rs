@@ -76,11 +76,17 @@ async fn rate_limit_midleware(
     req: Request,
     next: Next,
 ) -> impl IntoResponse {
+    // tracing::debug!("Get client addr: {}", ip_addr);
+
     if state.check(&ip_addr) {
         next.run(req).await
     } else {
         (StatusCode::TOO_MANY_REQUESTS, "Too many request!").into_response()
     }
+}
+
+async fn say_hello_handler(SecureClientIp(ip_addr): SecureClientIp) -> String {
+    format!("Hello: {}", ip_addr)
 }
 
 #[tokio::main]
@@ -91,7 +97,7 @@ async fn main() -> Result<()> {
 
     let state = LimitState::new();
     let app = Router::new()
-        .route("/login", get(|| async { "user name or password invalid." }))
+        .route("/hello", get(say_hello_handler))
         .route_layer(middleware::from_fn_with_state(state, rate_limit_midleware))
         .layer(SecureClientIpSource::ConnectInfo.into_extension());
 
@@ -108,4 +114,3 @@ async fn main() -> Result<()> {
 
     Ok(())
 }
-
