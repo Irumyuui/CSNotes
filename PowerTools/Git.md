@@ -1,5 +1,9 @@
 # Git
 
+## 分支
+
+[分支入门实践](https://learngitbranching.js.org/?locale=zh_CN)
+
 ## Config
 
 ```sh
@@ -17,7 +21,7 @@ git config --global i18n.commit.encoding utf-8
 git config --global i18n.logoutputencoding utf-8
 
 # 代理
-git config --global http.proxy http://127.0.0.1:7890 
+git config --global http.proxy http://127.0.0.1:7890
 ```
 
 ## windows 下文件名过长
