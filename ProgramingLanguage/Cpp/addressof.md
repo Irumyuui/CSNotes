@@ -1,5 +1,7 @@
 # addressof 实现
 
+- 为什么需要先转换为 `const volatile` ：模板 `T` 可能带 `volatile` ，换句话来说就是为一些接口擦屁股用的
+
 ```c++
 template <typename T>
 [[nodiscard]]
