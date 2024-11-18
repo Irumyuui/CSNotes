@@ -14,7 +14,7 @@ fn check_is_odd(i: u32) -> Result<u32, u32> {
 fn main() {
     let res = (0..100)
         .into_iter()
-        .map(|i| check_is_odd(i))
+        .map(check_is_odd)
         .collect::<Result<Vec<u32>, u32>>();
 
     let _ = res
