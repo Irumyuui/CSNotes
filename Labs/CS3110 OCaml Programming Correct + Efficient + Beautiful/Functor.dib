@@ -1,0 +1,41 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+# Functor
+
+#!fsharp
+
+module HighFunctors =
+    let rec fold_right f lst acc =
+        match lst with
+        | [] -> acc
+        | x :: xs -> f x <| fold_right f xs acc
+
+    let rec fold_left f acc lst =
+        match lst with
+        | [] -> acc
+        | x :: xs -> fold_left f (f acc x) xs
+
+    let rec filter p lst =
+        match lst with
+        | [] -> []
+        | x :: xs -> if p x then x :: filter p xs else filter p xs
+
+    let rec filterAux p acc lst =
+        match lst with
+        | [] -> List.rev acc
+        | x :: xs -> filterAux p (if p x then x :: acc else acc) xs
+
+    let rec map f lst =
+        match lst with
+        | [] -> []
+        | x :: xs -> f x :: map f xs
+
+#!fsharp
+
+open HighFunctors;
+
+map ((+) 1) [1; 2; 3; 4;] |> printfn "%A"

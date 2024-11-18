@@ -1,0 +1,47 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+# Data Types
+
+一个 Data Type 描述的类型信息为: `A + B + C` ，也就是这些类型的所有可能性。
+
+#!fsharp
+
+type PrimaryColor =
+    | Red
+    | Green
+    | Blue
+
+type Point = float * float
+
+type Shape =
+    | Circle of Circle
+    | Rectangle of Rectangle
+    | Point of Point
+
+and Circle = { Center: Point; Radius: float }
+and Rectangle = { LowerLeft: Point; UpperRight: Point }
+
+// let inline avg a b = (a + b) / 2.
+
+let center s =
+    match s with
+    | Circle { Center = center' } -> center'
+    | Rectangle { LowerLeft = (x1, y1)
+                  UpperRight = (x2, y2) } -> let avg = fun a b -> (a + b) / 2. in (avg x1 x2, avg y1 y2): Point
+    | Point p -> p
+
+#!fsharp
+
+let c1 = Circle { Center = (0., 0.); Radius = 1. }
+
+let r1 =
+    Rectangle
+        { LowerLeft = (-1., -1.)
+          UpperRight = (1., 1.) }
+
+c1 |> center |> printfn "Center of c1: %A"
+r1 |> center |> printfn "Center of r1: %A"

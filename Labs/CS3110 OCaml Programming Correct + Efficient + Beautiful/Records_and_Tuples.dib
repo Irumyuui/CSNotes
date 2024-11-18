@@ -1,0 +1,35 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"}]}}
+
+#!markdown
+
+# Records and Tuples
+
+## Records
+
+#!fsharp
+
+type Student = {
+    Name: string;
+    Year: int
+}
+
+let rbg = { Name = "Ruth Bader"; Year = 1945 }
+
+// with
+let rbg2 = { rbg with Name = "2" }
+
+#!markdown
+
+## Tuples
+
+#!fsharp
+
+type Time = int * int * string
+let t: Time = (12, 30, "PM")
+
+type Point = float * float
+let p: Point = (1.0, 2.0)
+
+p |> fst |> printfn "%f"
