@@ -16,5 +16,6 @@
         "**/*.exp": true,
         "**/*.lib": true,
         "**/*.pdb": true
-    }
+    },
+    "cmake.ignoreCMakeListsMissing": true
 }
