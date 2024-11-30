@@ -1,29 +1,33 @@
-use std::ops::{Deref, DerefMut};
-use std::sync::Arc;
-use std::{cell::UnsafeCell, sync::atomic::AtomicBool};
-
-use std::sync::atomic::Ordering as AtomicOrdering;
+use std::{
+    cell::UnsafeCell,
+    ops::{Deref, DerefMut},
+    sync::atomic::{AtomicBool, Ordering as AtomicOrdering},
+};
 
 pub struct SpinLock<T> {
-    lock: AtomicBool,
+    lock_flag: AtomicBool,
     data: UnsafeCell<T>,
 }
 
-unsafe impl<T> Sync for SpinLock<T> where T: Send {}
+unsafe impl<T> Sync for SpinLock<T> {}
+
+struct SpinLockGuard<'lock, T> {
+    inner: &'lock SpinLock<T>,
+}
 
 impl<T> SpinLock<T> {
-    pub fn new(data: T) -> Self {
+    pub const fn new(data: T) -> Self {
         Self {
-            lock: AtomicBool::new(false),
+            lock_flag: AtomicBool::new(false),
             data: UnsafeCell::new(data),
         }
     }
 
-    pub fn lock(&self) -> SpinLockGuard<T> {
-        // 成功，位于这条 加载-修改-存储 指令之后的访存指令因为被禁止重排到前面，所以一定能看到这条语句的结果，算是通知其他的位置，让他们也能看到锁的状态
-        // 失败，随便
+    // 成功，位于这条 加载-修改-存储 指令之后的访存指令因为被禁止重排到前面，所以一定能看到这条语句的结果，算是通知其他的位置，让他们也能看到锁的状态
+    // 失败，随便
+    pub fn lock<'lock>(&'lock self) -> SpinLockGuard<'lock, T> {
         while self
-            .lock
+            .lock_flag
             .compare_exchange_weak(
                 false,
                 true,
@@ -33,34 +37,30 @@ impl<T> SpinLock<T> {
             .is_err()
         {}
 
-        SpinLockGuard { lock: self }
+        SpinLockGuard { inner: self }
     }
 }
 
-pub struct SpinLockGuard<'a, T> {
-    lock: &'a SpinLock<T>,
-}
-
-impl<T> Drop for SpinLockGuard<'_, T> {
+impl<'lock, T> Drop for SpinLockGuard<'lock, T> {
+    // 确保在释放锁之前的所有内存操作（读或写）不会被重排到释放锁之后
+    // 当此条指令的结果对其他线程可见后，之前的所有指令都可见
+    // 也算是通知其他的位置，让他们也能看到释放锁的指令
     fn drop(&mut self) {
-        // 确保在释放锁之前的所有内存操作（读或写）不会被重排到释放锁之后
-        // 当此条指令的结果对其他线程可见后，之前的所有指令都可见
-        // 也算是通知其他的位置，让他们也能看到释放锁的指令
-        self.lock.lock.store(false, AtomicOrdering::Release);
+        self.inner.lock_flag.store(false, AtomicOrdering::Release);
     }
 }
 
-impl<T> Deref for SpinLockGuard<'_, T> {
+impl<'lock, T> Deref for SpinLockGuard<'lock, T> {
     type Target = T;
 
     fn deref(&self) -> &Self::Target {
-        unsafe { &*self.lock.data.get() }
+        unsafe { &*self.inner.data.get() }
     }
 }
 
-impl<T> DerefMut for SpinLockGuard<'_, T> {
+impl<'lock, T> DerefMut for SpinLockGuard<'lock, T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut *self.lock.data.get() }
+        unsafe { &mut *self.inner.data.get() }
     }
 }
 
