@@ -1,1 +1,6 @@
-{}
+{
+  "strictLineBreaks": true,
+  "useTab": false,
+  "showLineNumber": false,
+  "showIndentGuide": false
+}
