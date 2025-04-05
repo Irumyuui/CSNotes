@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shell-for-fat12", "shell-for-fat12.csproj", "{FFBD47B0-B02F-40B2-86E7-DEA7EB9E8DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFBD47B0-B02F-40B2-86E7-DEA7EB9E8DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBD47B0-B02F-40B2-86E7-DEA7EB9E8DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBD47B0-B02F-40B2-86E7-DEA7EB9E8DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBD47B0-B02F-40B2-86E7-DEA7EB9E8DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD65E911-8F49-4132-A412-710C0B948FA0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+{
+    "polyglot-notebook.defaultNotebookExtension": ".dib",
+    "clangd.fallbackFlags": [
+        "-xc++",
+        "-I",
+        "-Wall",
+        // "-Wextra",
+        "-std=c++23",
+        // "-Werror",
+        // "-Wshadow"
+    ],
+    "cph.language.cpp.Args": "-std=c++23 -pipe -g -O0 -fsanitize=undefined,address",
+    "cph.language.cpp.Command": "clang++",
+    "cph.language.cpp.SubmissionCompiler": "GNU G++20 13.2 (64 bit, winlibs)",
+    "files.exclude": {
+        "**/*.exp": true,
+        "**/*.lib": true,
+        "**/*.pdb": true
+    },
+    "cmake.ignoreCMakeListsMissing": true
+}
