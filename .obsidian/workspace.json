@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/3396.使数组元素互不相同所需的最少操作次数.md",
+                "file": "Blogs/2025-04-08 轻度抑郁.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3396.使数组元素互不相同所需的最少操作次数"
+              "title": "2025-04-08 轻度抑郁"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/3396.使数组元素互不相同所需的最少操作次数.md",
+                "file": "Blogs/2025-04-08 轻度抑郁.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "3396.使数组元素互不相同所需的最少操作次数 的出链列表"
+              "title": "2025-04-08 轻度抑郁 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/3396.使数组元素互不相同所需的最少操作次数.md",
+                "file": "Blogs/2025-04-08 轻度抑郁.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "3396.使数组元素互不相同所需的最少操作次数 的大纲"
+              "title": "2025-04-08 轻度抑郁 的大纲"
             }
           },
           {
@@ -162,11 +162,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 296.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,8 +183,10 @@
   },
   "active": "c1662a89a3d746ca",
   "lastOpenFiles": [
-    "Programming-Language/协程.md",
+    "Programming-Language/Rust/有用的技巧.md",
+    "Blogs/2025-04-08 轻度抑郁.md",
     "Leetcode/3396.使数组元素互不相同所需的最少操作次数.md",
+    "Programming-Language/协程.md",
     "README.md",
     "Blogs/2025-04-06 关于毕设.md",
     "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
@@ -195,7 +198,6 @@
     "Acm-Templates/Code-Templates/Rust.md",
     "Acm-Templates/Code-Templates",
     "Acm-Templates",
-    "Programming-Language/Rust/有用的技巧.md",
     "Leetcode",
     "Programming-Language/Rust/偏特化.md",
     "Programming-Language/Rust/README.md",
