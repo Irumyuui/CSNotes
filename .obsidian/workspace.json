@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Codeforces/2093/G. Skibidus and Capping.md",
+                "file": "Acm-Templates/数学.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "G. Skibidus and Capping"
+              "title": "数学"
             }
           }
         ],
@@ -198,8 +198,9 @@
   },
   "active": "67c8a93becd864c4",
   "lastOpenFiles": [
-    "Codeforces/2065/G. Shorten the Array.md",
     "Codeforces/2093/G. Skibidus and Capping.md",
+    "Acm-Templates/数学.md",
+    "Codeforces/2065/G. Shorten the Array.md",
     "Codeforces/1003/未命名.md",
     "Codeforces/2093",
     "Codeforces/2065",
@@ -231,7 +232,6 @@
     "未命名.canvas",
     "Programming-Paradigm/为什么组合优于继承.md",
     "Prev-Repo/PowerTools/PowerToys/PowerToys Run.md",
-    "Prev-Repo/ProgramingLanguage/Rust/类型状态·设计模式.md",
     "Programming-Paradigm",
     "Programming-Language/Rust",
     "Programming-Language"
