@@ -10,3 +10,7 @@
 
 - 大全： [Introduction - The Rust Reference](https://doc.rust-lang.org/reference/)
 - 并发： [Rust Atomics and Locks by Mara Bos](https://marabos.nl/atomics/)
+
+## Crates
+
+- [crates.io: Rust Package Registry](https://crates.io/)

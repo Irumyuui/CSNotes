@@ -13,15 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Programming-Language/Rust/LocalSet.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "LocalSet"
+            }
+          },
+          {
+            "id": "140127f3ad81c6c1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,8 +195,29 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b5b2e5561da24bf3",
+  "active": "140127f3ad81c6c1",
   "lastOpenFiles": [
+    "Operating-System/io-uring/README.md.md",
+    "Programming-Language/Rust/LocalSet.md",
+    "Tricks/README.md",
+    "Tricks/Ring Buffer.md",
+    "README.md",
+    "Programming-Language/Rust/README.md",
+    "Programming-Language/协程.md",
+    "Programming-Paradigm/为什么组合优于继承.md",
+    "Programming-Language/Rust/有用的技巧.md",
+    "[Asynchronous.md",
+    "Operating-System/io-uring",
+    "Operating-System",
+    "Leetcode/416.分割等和子集.md",
+    "Leetcode/368.最大整除子集.md",
+    "Leetcode/3396.使数组元素互不相同所需的最少操作次数.md",
+    "Leetcode",
+    "Blogs/README.md",
+    "Blogs/2025-04-08 轻度抑郁.md",
+    "Blogs/2025-04-06 关于毕设.md",
+    "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
+    "Blogs",
     "Prev-Repo/Assets/Image/ProgramingLanguage/Cpp/左值右值.png",
     "Prev-Repo/Assets/Image/Labs/MIT 6.824/MapReduce-Execution-Overview.png",
     "Prev-Repo/Assets/Image/OperatingSystem/x86-pte.png",
@@ -194,24 +229,13 @@
     "Prev-Repo/Assets/Image/ProgramingLanguage",
     "Prev-Repo/Assets/Image/Labs",
     "Prev-Repo/Assets/Image/Interview",
-    "Prev-Repo/Assets/Image",
-    "Prev-Repo/Assets",
-    "Tricks/README.md",
-    "Tricks/Ring Buffer.md",
-    "Tricks",
-    "Programming-Paradigm/为什么组合优于继承.md",
-    "Programming-Paradigm",
     "Programming-Language/Rust/生命周期相关.md",
-    "Programming-Language/Rust/有用的技巧.md",
-    "Programming-Language/Rust/README.md",
     "Programming-Language/Rust/偏特化.md",
-    "Programming-Language/协程.md",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/dist/assets/react-CHdo91hT.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/vite-fs/src/assets/react.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/vite-fs/public/vite.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/dist/vite.svg",
-    "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/build/logo512.png",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/vite-fs/README.md",
     "Prev-Repo/WebDevelopment/BackEnd/Examples/web-async-fmk/README.md",
     "Prev-Repo/WebDevelopment/Example/ASP.NET-Exp/README.md",
@@ -219,16 +243,6 @@
     "Prev-Repo/WebDevelopment/React/useContext.md",
     "Prev-Repo/WebDevelopment/Axum/层次结构.md",
     "Prev-Repo/WebDevelopment/Jwt.md",
-    "Prev-Repo/GameDevelopment/Unity/Demo/move-touch-demo/README.md",
-    "Prev-Repo/GameDevelopment/Unity/碰撞检测.md",
-    "Prev-Repo/GameDevelopment/Unity/Unity对象判空.md",
-    "Prev-Repo/GameDevelopment/Unity/README.md",
-    "Prev-Repo/GameDevelopment/Unity/本地存储玩家状态.md",
-    "Prev-Repo/GameDevelopment/GamePlay/README.md",
-    "Prev-Repo/GameDevelopment/Cocos/README.md",
-    "Prev-Repo/GameDevelopment/SomeAdvices.md",
-    "Prev-Repo/GameDevelopment/README.md",
-    "Prev-Repo/DesignPattern/设计模式六大原则.md",
     "未命名.canvas"
   ]
 }
