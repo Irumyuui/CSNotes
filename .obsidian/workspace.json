@@ -4,38 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0f7a3580b5ee8d39",
+        "id": "5bb7f2d1f98c6458",
         "type": "tabs",
         "children": [
           {
-            "id": "b5b2e5561da24bf3",
+            "id": "a8789b536611c2c8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming-Language/Rust/LocalSet.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "LocalSet"
-            }
-          },
-          {
-            "id": "140127f3ad81c6c1",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,8 +153,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -195,15 +177,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "140127f3ad81c6c1",
+  "active": "a8789b536611c2c8",
   "lastOpenFiles": [
+    "Blogs/2025-04-28 累了.md",
+    "Blogs/2025-04-08 轻度抑郁.md",
+    "Programming-Language/Rust/README.md",
+    "Games/README.md",
+    "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
+    "Games",
+    "Blogs/2025-04-06 关于毕设.md",
+    "Blogs/README.md",
     "Operating-System/io-uring/README.md.md",
+    "Programming-Language/协程.md",
     "Programming-Language/Rust/LocalSet.md",
     "Tricks/README.md",
     "Tricks/Ring Buffer.md",
     "README.md",
-    "Programming-Language/Rust/README.md",
-    "Programming-Language/协程.md",
     "Programming-Paradigm/为什么组合优于继承.md",
     "Programming-Language/Rust/有用的技巧.md",
     "[Asynchronous.md",
@@ -213,10 +202,6 @@
     "Leetcode/368.最大整除子集.md",
     "Leetcode/3396.使数组元素互不相同所需的最少操作次数.md",
     "Leetcode",
-    "Blogs/README.md",
-    "Blogs/2025-04-08 轻度抑郁.md",
-    "Blogs/2025-04-06 关于毕设.md",
-    "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
     "Blogs",
     "Prev-Repo/Assets/Image/ProgramingLanguage/Cpp/左值右值.png",
     "Prev-Repo/Assets/Image/Labs/MIT 6.824/MapReduce-Execution-Overview.png",
@@ -228,7 +213,6 @@
     "Prev-Repo/Assets/Image/编程的流程图.png",
     "Prev-Repo/Assets/Image/ProgramingLanguage",
     "Prev-Repo/Assets/Image/Labs",
-    "Prev-Repo/Assets/Image/Interview",
     "Programming-Language/Rust/生命周期相关.md",
     "Programming-Language/Rust/偏特化.md",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
@@ -241,8 +225,6 @@
     "Prev-Repo/WebDevelopment/Example/ASP.NET-Exp/README.md",
     "Prev-Repo/WebDevelopment/React/useReduce.md",
     "Prev-Repo/WebDevelopment/React/useContext.md",
-    "Prev-Repo/WebDevelopment/Axum/层次结构.md",
-    "Prev-Repo/WebDevelopment/Jwt.md",
     "未命名.canvas"
   ]
 }
