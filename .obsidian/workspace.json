@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5bb7f2d1f98c6458",
+        "id": "edef69044cf53980",
         "type": "tabs",
         "children": [
           {
-            "id": "a8789b536611c2c8",
+            "id": "73c405ff1438bb60",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Codeforces/2093/G. Skibidus and Capping.md",
+                "file": "Programming-Language/Rust/生命周期相关.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "G. Skibidus and Capping 的大纲"
+              "title": "生命周期相关 的大纲"
             }
           },
           {
@@ -153,16 +153,16 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 296.5,
+    "width": 368.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -177,8 +177,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a8789b536611c2c8",
+  "active": "9c50cb360eec8359",
   "lastOpenFiles": [
+    "Blogs/2025-04-29 新的开始.md",
+    "Blogs/README.md",
+    "Programming-Language/Rust/生命周期相关.md",
     "Blogs/2025-04-28 累了.md",
     "Blogs/2025-04-08 轻度抑郁.md",
     "Programming-Language/Rust/README.md",
@@ -186,7 +189,6 @@
     "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
     "Games",
     "Blogs/2025-04-06 关于毕设.md",
-    "Blogs/README.md",
     "Operating-System/io-uring/README.md.md",
     "Programming-Language/协程.md",
     "Programming-Language/Rust/LocalSet.md",
@@ -213,7 +215,6 @@
     "Prev-Repo/Assets/Image/编程的流程图.png",
     "Prev-Repo/Assets/Image/ProgramingLanguage",
     "Prev-Repo/Assets/Image/Labs",
-    "Programming-Language/Rust/生命周期相关.md",
     "Programming-Language/Rust/偏特化.md",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/dist/assets/react-CHdo91hT.svg",
@@ -224,7 +225,6 @@
     "Prev-Repo/WebDevelopment/BackEnd/Examples/web-async-fmk/README.md",
     "Prev-Repo/WebDevelopment/Example/ASP.NET-Exp/README.md",
     "Prev-Repo/WebDevelopment/React/useReduce.md",
-    "Prev-Repo/WebDevelopment/React/useContext.md",
     "未命名.canvas"
   ]
 }
