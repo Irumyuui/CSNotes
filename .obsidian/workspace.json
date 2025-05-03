@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming-Language/Rust/README.md",
+                "file": "Blogs/2025-05-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2025-05-03"
             }
           }
         ]
@@ -183,12 +183,13 @@
   },
   "active": "73c405ff1438bb60",
   "lastOpenFiles": [
-    "Blogs/2025-04-29 新的开始.md",
     "Blogs/README.md",
-    "Programming-Language/Rust/生命周期相关.md",
+    "Blogs/2025-05-03.md",
     "Blogs/2025-04-28 累了.md",
-    "Blogs/2025-04-08 轻度抑郁.md",
     "Programming-Language/Rust/README.md",
+    "Blogs/2025-04-29 新的开始.md",
+    "Programming-Language/Rust/生命周期相关.md",
+    "Blogs/2025-04-08 轻度抑郁.md",
     "Games/README.md",
     "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
     "Games",
@@ -228,7 +229,6 @@
     "Prev-Repo/WebDevelopment/Example/axum-static-page/vite-fs/README.md",
     "Prev-Repo/WebDevelopment/BackEnd/Examples/web-async-fmk/README.md",
     "Prev-Repo/WebDevelopment/Example/ASP.NET-Exp/README.md",
-    "Prev-Repo/WebDevelopment/React/useReduce.md",
     "未命名.canvas"
   ]
 }
