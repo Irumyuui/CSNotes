@@ -11,10 +11,14 @@
             "id": "73c405ff1438bb60",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Programming-Language/Rust/README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -177,7 +181,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9c50cb360eec8359",
+  "active": "73c405ff1438bb60",
   "lastOpenFiles": [
     "Blogs/2025-04-29 新的开始.md",
     "Blogs/README.md",

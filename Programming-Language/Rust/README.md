@@ -14,3 +14,9 @@
 ## Crates
 
 - [crates.io: Rust Package Registry](https://crates.io/)
+
+## Parser
+
+我不想再碰 parser 的东西，但确实还是需要的……
+
+- [Jacob's Domain | Rust 组合子](https://jacobbishopxy.github.io/reads/2021-7-11-rust-parser-combinators/)
