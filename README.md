@@ -12,3 +12,7 @@
 - 个人发电日记
 
 原本的笔记全部归档到 `Prev-Repo` 分支中。
+
+## 其他可以看的资料
+
+- [Computer Science Notes](https://www.pling.org.uk/cs/)
