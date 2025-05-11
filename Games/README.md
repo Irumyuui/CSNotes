@@ -17,3 +17,7 @@
 - [Ray Tracing in One Weekend Series](https://raytracing.github.io/)
 - Games101
 - MIT 6.837
+
+## 其他
+
+- [Introduction to 3D Game Programming with Direct3D 12.0](https://d3dcoder.net/d3d12.htm)
