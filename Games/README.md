@@ -11,7 +11,7 @@
 
 ## Labs
 
-按计划顺序。看过的再看一次，顺便记得把作业写了。
+有空看看。
 
 - Games104
 - [Ray Tracing in One Weekend Series](https://raytracing.github.io/)
