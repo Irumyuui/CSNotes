@@ -16,3 +16,7 @@
 ## 其他可以看的资料
 
 - [Computer Science Notes](https://www.pling.org.uk/cs/)
+
+## 论文查询工具
+
+- [SurveyGO](https://surveygo.modelbest.cn/)
