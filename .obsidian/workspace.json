@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Programming-Language/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -181,14 +181,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "26598c685ffcc543",
+  "active": "9c50cb360eec8359",
   "lastOpenFiles": [
+    "Programming-Language/Rust/README.md",
+    "Games/README.md",
+    "Games/GAMES104/README.md",
+    "README.md",
     "Acm-Templates/数学.md",
     "Acm-Templates/Code-Templates/Rust.md",
     "Games/GAMES104/03-如何构建游戏世界.md",
-    "Games/GAMES104/README.md",
     "Games/GAMES104/04-游戏引擎中的渲染实践.md",
-    "Games/README.md",
     "Tricks/README.md",
     "Tricks/Ring Buffer.md",
     "Games/GAMES104/3/事件订阅机制.md",
@@ -197,13 +199,11 @@
     "Games/GAMES104",
     "Games/Games104/02.引擎架构分层.md",
     "Games/Games104",
-    "README.md",
     "Programming-Language/README.md",
     "Operating-System/io-uring/README.md.md",
     "Blogs/2025-05-03.md",
     "Blogs/README.md",
     "Blogs/2025-04-28 累了.md",
-    "Programming-Language/Rust/README.md",
     "Blogs/2025-04-29 新的开始.md",
     "Programming-Language/Rust/生命周期相关.md",
     "Blogs/2025-04-08 轻度抑郁.md",
