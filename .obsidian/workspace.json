@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3a2014013b2c844a",
+        "id": "9afa2dd20fef8fe0",
         "type": "tabs",
         "children": [
           {
-            "id": "26598c685ffcc543",
+            "id": "5700161204f94aee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming-Language/README.md",
+                "file": "Programming-Language/Rust/错误处理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "错误处理"
             }
           }
         ]
@@ -181,8 +181,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9c50cb360eec8359",
+  "active": "5700161204f94aee",
   "lastOpenFiles": [
+    "Programming-Language/Rust/错误处理.md",
+    "Programming-Language/CSharp",
+    "Programming-Language/README.md",
     "Programming-Language/Rust/README.md",
     "Games/README.md",
     "Games/GAMES104/README.md",
@@ -199,7 +202,6 @@
     "Games/GAMES104",
     "Games/Games104/02.引擎架构分层.md",
     "Games/Games104",
-    "Programming-Language/README.md",
     "Operating-System/io-uring/README.md.md",
     "Blogs/2025-05-03.md",
     "Blogs/README.md",
@@ -212,7 +214,6 @@
     "Blogs/2025-04-06 关于毕设.md",
     "Programming-Language/协程.md",
     "Programming-Language/Rust/LocalSet.md",
-    "Programming-Paradigm/为什么组合优于继承.md",
     "Operating-System/io-uring",
     "Operating-System",
     "Leetcode",
@@ -222,7 +223,6 @@
     "Prev-Repo/Assets/Image/OperatingSystem/x86-pte.png",
     "Prev-Repo/Assets/Image/Interview/exe-memory-layout.png",
     "Prev-Repo/Assets/Image/Labs/MIT 6.824",
-    "Prev-Repo/Assets/Image/ProgramingLanguage/Cpp",
     "Prev-Repo/Assets/Image/编程的流程图.png",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/dist/assets/react-CHdo91hT.svg",
