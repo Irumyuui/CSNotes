@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9afa2dd20fef8fe0",
+        "id": "6559a4b54d765491",
         "type": "tabs",
         "children": [
           {
-            "id": "5700161204f94aee",
+            "id": "3d625a8075572c99",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming-Language/Rust/Box切片转化问题.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Box切片转化问题"
+              "title": "新标签页"
             }
           }
         ]
@@ -181,10 +177,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5700161204f94aee",
+  "active": "3d625a8075572c99",
   "lastOpenFiles": [
-    "Games/README.md",
+    "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
+    "Blogs/2025-05-03.md",
+    "Blogs/2025-04-28 累了.md",
+    "Blogs/2025-04-08 轻度抑郁.md",
+    "Blogs/README.md",
     "Programming-Language/Rust/Box切片转化问题.md",
+    "Games/README.md",
     "README.md",
     "Codeforces/2093/G. Skibidus and Capping.md",
     "Codeforces/2065/G. Shorten the Array.md",
@@ -207,12 +208,7 @@
     "Games/GAMES104/3/组件模式.md",
     "Games/GAMES104/3",
     "Games/GAMES104",
-    "Games/Games104/02.引擎架构分层.md",
     "Games/Games104",
-    "Blogs/2025-05-03.md",
-    "Blogs/README.md",
-    "Blogs/2025-04-28 累了.md",
-    "Blogs/2025-04-29 新的开始.md",
     "Games",
     "Operating-System/io-uring",
     "Operating-System",
