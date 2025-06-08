@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6559a4b54d765491",
+        "id": "c0652da7b71e421c",
         "type": "tabs",
         "children": [
           {
-            "id": "3d625a8075572c99",
+            "id": "77942b392645bdec",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -177,8 +177,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3d625a8075572c99",
+  "active": "77942b392645bdec",
   "lastOpenFiles": [
+    "Utilities/README.md.md",
+    "Utilities",
     "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
     "Blogs/2025-05-03.md",
     "Blogs/2025-04-28 累了.md",
@@ -205,7 +207,6 @@
     "Tricks/README.md",
     "Tricks/Ring Buffer.md",
     "Games/GAMES104/3/事件订阅机制.md",
-    "Games/GAMES104/3/组件模式.md",
     "Games/GAMES104/3",
     "Games/GAMES104",
     "Games/Games104",
@@ -218,7 +219,6 @@
     "Prev-Repo/Assets/Image/Labs/MIT 6.824/MapReduce-Execution-Overview.png",
     "Prev-Repo/Assets/Image/OperatingSystem/x86-pte.png",
     "Prev-Repo/Assets/Image/Interview/exe-memory-layout.png",
-    "Prev-Repo/Assets/Image/Labs/MIT 6.824",
     "Prev-Repo/Assets/Image/编程的流程图.png",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "Prev-Repo/WebDevelopment/Example/axum-static-page/axum-backend/dist/assets/react-CHdo91hT.svg",
