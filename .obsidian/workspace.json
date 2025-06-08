@@ -11,10 +11,14 @@
             "id": "77942b392645bdec",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Utilities/Windows沙盒无法启动.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Windows沙盒无法启动"
             }
           }
         ]
@@ -179,6 +183,7 @@
   },
   "active": "77942b392645bdec",
   "lastOpenFiles": [
+    "Utilities/Windows沙盒无法启动.md",
     "Utilities/README.md.md",
     "Utilities",
     "Blogs/2025-04-05 大学毕业一个月前的回顾.md",
@@ -206,7 +211,6 @@
     "Acm-Templates/Code-Templates/Rust.md",
     "Tricks/README.md",
     "Tricks/Ring Buffer.md",
-    "Games/GAMES104/3/事件订阅机制.md",
     "Games/GAMES104/3",
     "Games/GAMES104",
     "Games/Games104",
